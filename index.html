@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="whoispanaceya - Netrunner Interface v2.1">
+    <title>whoispanaceya // Initializing Interface...</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="loader-background"></div>
+        <div class="vignette-overlay"></div>
+        <div class="loader-content">
+            <div id="glitch-container">
+                 <div class="glitch-text static-glitch" data-text="INITIALIZING NEURAL LINK">INITIALIZING NEURAL LINK</div>
+            </div>
+            <div class="system-log">
+                <p class="log-entry">> BIOS Check: v4.77 Passed</p>
+                <p class="log-entry">> Memory Integrity Scan...</p>
+                <p class="log-entry">> Loading Core OS: NightCity_Kernel_Rev7...</p>
+                <p class="log-entry">> Establishing Network Bridge...</p>
+                <p class="status log-entry">> STATUS: <span id="load-status" data-status-glitch="">CONNECTING...</span></p>
+                <p id="warning-line" class="log-entry warning" style="display: none;">> WARNING: Unstable Cybrid Connection Detected!</p>
+            </div>
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="loading-percentage">0%</div>
+        </div>
+        <div class="scanline-overlay loader-scanlines"></div>
+    </div>
+
+    <main id="main-content">
+        <div class="vignette-overlay"></div>
+        <div class="scanline-overlay main-scanlines"></div>
+        <div class="grid-overlay"></div>
+        <div class="noise-overlay"></div>
+
+        <div class="corner-element top-left"><i></i></div>
+        <div class="corner-element top-right"><i></i></div>
+        <div class="corner-element bottom-left"><i></i></div>
+        <div class="corner-element bottom-right"><i></i></div>
+
+        <header class="main-header">
+            <div class="header-flair left"></div>
+             <h1 class="glitch main-title" data-text="whoispanaceya">
+                <span>w</span><span>h</span><span>o</span><span>i</span><span>s</span><span>p</span><span>a</span><span>n</span><span>a</span><span>c</span><span>e</span><span>y</span><span>a</span>
+             </h1>
+             <div class="header-flair right"></div>
+            <div class="header-decoration"></div>
+        </header>
+
+        <div class="nav-container-wrapper">
+             <div class="nav-bracket top-left"></div>
+             <div class="nav-bracket top-right"></div>
+             <nav class="link-container">
+                 <a href="https://steamcommunity.com/id/N3XT3ROfficial/" target="_blank" class="link-item" data-text="[ STEAM // DATA_VAULT ]">[ STEAM // DATA_VAULT ]</a>
+                 <a href="https://t.me/panaceyaaa" target="_blank" class="link-item" data-text="[ TELEGRAM // SECURE_COMMS ]">[ TELEGRAM // SECURE_COMMS ]</a>
+                 <a href="https://github.com/N3XT3R1337" target="_blank" class="link-item" data-text="[ GITHUB // CODE_REPOSITORY ]">[ GITHUB // CODE_REPOSITORY ]</a>
+                 <a href="#" target="_blank" class="link-item unavailable" data-text="[ // CRYPTIC_NODE // ]" onclick="return false;">[ // CRYPTIC_NODE // ]</a>
+                 <a href="#" target="_blank" class="link-item unavailable" data-text="[ SIGNAL_LOST ]" onclick="return false;">[ SIGNAL_LOST ]</a>
+             </nav>
+             <div class="nav-bracket bottom-left"></div>
+             <div class="nav-bracket bottom-right"></div>
+        </div>
+
+
+        <footer class="main-footer">
+            <div class="footer-line"></div>
+            <div class="footer-content">
+                <span id="system-status"><system_status: online // interface_ver: CP-UI_v8.1></span>
+                <span id="digital-clock">00:00:00</span>
+                <span id="session-status">SESSION ACTIVE :: NEURAL LINK STABLE</span>
+            </div>
+            <div class="footer-line"></div>
+        </footer>
+
+        <div class="background-elements">
+            <div class="bg-element e1"></div>
+            <div class="bg-element e2"></div>
+            <div class="bg-element e3"></div>
+            <div class="bg-element e4"></div>
+            <div class="bg-element e5"></div>
+            <div class="bg-element e6"></div>
+        </div>
+
+        <canvas id="matrix-canvas"></canvas>
+
+    </main>
+     <div id="mouse-glow"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
